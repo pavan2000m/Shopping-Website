@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.pro{
+    background-color:red;
+    height: 1.5px;
+    animation: width 3s linear   forwards;
+}
+@keyframes width {
+    0%{
+        width: 50%;
+    }
+    60%{
+        width: 70%;
+    }
+    80%{
+        width: 100%;
+    }
+    
+}
+header{
+    background-color: #3528f0;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    /* display:inline-flex; */
+    align-items: center;
+    padding-top: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    padding: 0 22px;
+}
+ul li a{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: rgb(247, 243, 243);
+     
+    
+}
+li a:hover{
+    color: rgb(248, 245, 245);
+    
+}
+ /* .active {
+     background-color: rgb(14, 14, 15);
+   
+} */
+
+.search{
+    display: flex;
+    align-items: center;
+    
+}
+.btn{
+    width: 60px;
+    height: 26px;
+    border-radius: 6px;
+    color: rgb(252, 248, 248);
+    cursor: pointer;
+    margin-left: 30px;
+    background: rgb(13, 15, 13);
+    
+}
+.btn2{
+     display: flex;
+    align-items: center;
+    width: 65px;
+    height: 26px;
+    margin: 17px 26px 17px 400px;
+    border-radius: 6px;
+    color: rgb(246, 246, 250);
+    background-color: rgb(12, 12, 12);
+    padding: 12px;
+    cursor: pointer;
+}
+   
+
+
+
+.btn3{
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 26px;
+    margin: 17px 100px 17px auto;
+    border-radius: 6px;
+    color: blue;
+    background-color: white;
+    padding: 12px;
+    cursor:pointer;
+}
+.search input{
+
+    width: 280px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0px 20px 0px 60px;
+    padding: 0px 12px;
+    color: black;
+}
+
+.container{
+ min-height: calc(100vh - 10vh - 58px);
+}
+
+
+
+
+.slider{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.slider img{
+     margin: 20px 0px;
+    width: 85vw;
+    height: 400px;
+
+
+}
+
+
+
+
+
+
+.card{
+    max-width: 91vw;
+    margin: 20px 40px ;
+}
+.cards{
+    display: flex;
+    overflow-x: scroll;
+}
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 55px;
+}
+.lines p{
+     display: flex;
+     justify-content: center;
+}
+   
+footer{
+    background-color: #0b52c4;
+    height: 10vh;
+}
+footer p{
+   color: white;
+}
+/* added css */

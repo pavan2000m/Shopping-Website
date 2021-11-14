@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <script type="text/javascript">
+        function validate(){
+            if(document.getElementsByName("email")== "")
+            {
+                alert("please enter your username");
+            }
+        } 
+        function empty(){
+            if(document.getElementsByName("password")== "")
+            {
+                alert("please enter your password");
+            }
+        }
+
+
+    
+    </script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container {
+        border: 2px solid rgb(17, 16, 16);
+        width: 500px;
+        height: 400px;
+        margin: 90px auto;
+        background-color: rgb(136, 226, 241);
+    }
+
+    h1 {
+        margin: 0px 0px 40px 0px;
+        position: relative;
+        left: 200px;
+        color: #45a049;;
+    }
+
+    label {
+        position: relative;
+        font-weight: 700;
+        margin: 10px 0px;
+        left: 90px;
+    }
+
+    form input[name=email] {
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 265px;
+        position: relative;
+        left: 90px;
+
+    }
+
+    form input[name=password] {
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 265px;
+        position: relative;
+        left: 90px;
+    }
+
+    form .btnn {
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 290px;
+        position: relative;
+        left: 90px;
+        background-color: #45a049;;
+    }
+
+    form input[name=remember] {
+
+        position: relative;
+        left: 90px;
+    }
+
+    ul a {
+
+        font-size: 18px;
+        text-decoration: none;
+        position: relative;
+        left: 327px;
+        bottom: 16px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>login</h1>
+        <form action="project1.html" name="login form" onsubmit="validate()">
+            <label for="username">Username/email</label><br>
+            <input type="text" name="email" id="email" placeholder="Enter Username"required><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+            <button class ="btnn" type="submit" id="myButton" class="float-left submit-button">login</button><br>
+            
+
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label><br>
+
+            <ul><a href="forgot.html">forgot?</a></ul>
+            
+
+        </form>
+        
+    </div>
+</body>
+
+</html>
